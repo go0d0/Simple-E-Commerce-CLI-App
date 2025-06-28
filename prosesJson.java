@@ -5,7 +5,7 @@ import java.io.FileReader; // untuk membaca file
 import java.io.File; // untuk membaca file
 
 public class prosesJson {
-    clonningAws cs = new clonningAws();
+    littleShop lp = new littleShop();
 
     public void nulis(String data1, String data2){
         StringBuilder sb = new StringBuilder();
@@ -95,7 +95,7 @@ boolean valid  = ubahKeJson.contains(" \"nama user\": \"" + data1 +"\"") && ubah
 if(valid){
 
 System.out.println("\n Berhasil login \n");    
-cs.toko();
+lp.toko();
 
 
 
