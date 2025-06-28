@@ -10,7 +10,7 @@ public class daftar {
       //Buat objek untuk simpan ke json
          prosesJson pn = new prosesJson();
          
-         // scanner akan otomatis di .close() setelah keluar dari try
+        
        try{
 
 
@@ -23,8 +23,8 @@ String dataNama = sr.nextLine();
 
 
 
-// new line
-  System.out.println("\n");
+  System.out.println("\n"); // new line
+  
   // memasukkan data password
         System.out.println("Masukkan Password anda:"); 
         System.out.print(": ");
@@ -49,6 +49,7 @@ pn.nulis(dataNama, dataPw);
 
 // method untuk validasi user, bisa diisi dengan logika untuk mengecek apakah user sudah terdaftar atau tidak
     public void validasiUser() {
+      
 Scanner sr = new Scanner(System.in);
         // Objek untuk validasi user
         prosesJson pn = new prosesJson();
