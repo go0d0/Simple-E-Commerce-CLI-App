@@ -27,7 +27,7 @@ BufferedReader br = new BufferedReader(new FileReader(fe));
 
 
 String baris; // nyimpan sementara
-if(fe.exists()){ // mengecek apakah file ada
+if(fe.exists()){ // apakah file ada
 
 while((baris = br.readLine()) != null){ // baca informasi file 
 sb.append(baris); // simpan ke sb(StringBuilder)
@@ -74,7 +74,7 @@ fw.close(); // tutup operasi tulis
 
 
 // method untuk validasi user, bisa diisi dengan logika untuk mengecek apakah user sudah terdaftar atau tidak
-    public void validasiUser(String data1, String data2){
+    public void validasiUser(String data1, String data2)throws Exception{
 
 StringBuilder sb = new StringBuilder(); // manipulasi string
 try{
@@ -101,6 +101,7 @@ boolean valid  = ubahKeJson.contains(" \"nama user\": \"" + data1 +"\"") && ubah
 if(valid){ // jika true
 
 System.out.println("\n Berhasil login \n");    
+Thread.sleep(5000);
 lp.toko(); // pindah ke toko
 
 
